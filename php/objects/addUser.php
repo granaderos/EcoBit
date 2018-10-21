@@ -8,8 +8,8 @@
 
     include_once "../controller/Functions.php";
 
-    $firstname = $_POST["firstname"];
-    $lastname = $_POST["lastname"];
+    $firstname = $_POST["firstName"];
+    $lastname = $_POST["lastName"];
     $email = $_POST["email"];
     $password = $_POST["password"];
 

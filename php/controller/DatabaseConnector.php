@@ -8,13 +8,13 @@
 
 class DatabaseConnector {
     protected $dbHost = "mysql:host=localhost;";
-    protected $dbName = "dbName=ecoBit";
+    protected $dbName = "dbname=ecoBit";
     protected $user = "root";
     protected $password = "";
     protected $dbHolder;
 
     function openConnection() {
-        $this->dbHolder = new PDO($this->dbHost.$this->dbName, $this->user, $this->$password);
+        $this->dbHolder = new PDO($this->dbHost.$this->dbName, $this->user, $this->password);
     }
 
     function closeConnection() {
